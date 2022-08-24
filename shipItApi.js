@@ -29,4 +29,14 @@ async function shipProduct({ productId, name, addr, zip }) {
   return resp.data.receipt.shipId;
 }
 
-module.exports = { shipProduct };
+// {
+// 	"receipt": {
+// 		"itemId": 1000,
+// 		"name": "Test Tester",
+// 		"addr": "100 Test St",
+// 		"zip": "12345-6789",
+// 		"shipId": 6697
+// 	}
+// }
+
+module.exports = { shipProduct, SHIPIT_SHIP_URL };
